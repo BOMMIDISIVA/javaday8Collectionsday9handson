@@ -1,0 +1,134 @@
+1st->
+package CollectionHandson;
+import java.util.*;
+class NumOfMatches{
+	public double percentage()
+	{
+    double avg=0;
+	int sum=0;
+	Scanner sc=new Scanner(System.in);
+	int matches=sc.nextInt();
+	int[] arr=new int[matches];
+	for(int i=0;i<arr.length;i++)
+	{
+	    arr[i]=sc.nextInt();
+		sum+=arr[i];
+	}
+	System.out.println(sum);
+	avg=sum/matches;
+	return avg;
+	}
+	
+	
+}
+public class Main {
+
+	public static void main(String[] args) {
+		NumOfMatches nom=new NumOfMatches();
+		double rating=nom.percentage();
+		System.out.println(rating);
+
+
+	}
+
+}
+output:-
+input:-
+5
+200
+210
+180
+176
+192
+output:-
+958
+191.0
+
+->2nd
+
+package CollectionHandson;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<Integer> runs=new TreeSet<>();
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++) {
+			runs.add(sc.nextInt());
+		}
+		System.out.println();
+		for(int r:runs) {
+			System.out.println(r);
+		}
+
+	}
+
+}
+outputs:-
+input:-
+
+6
+101
+78
+90
+59
+77
+67
+output:-
+59
+67
+77
+78
+90
+101
+
+
+->3rd
+
+
+package CollectionHandson;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		List<String> names=new ArrayList<>();
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		for(int i=0;i<=n;i++) {
+			names.add(sc.nextLine());
+		}
+		System.out.println("Enter vinue to fing frequency");
+		String venue=sc.nextLine();
+		int freqency=Collections.frequency(names, venue);
+		System.out.println("count"+freqency);
+	
+	}
+
+}
+
+
+output:-
+8
+M.A.Chidambaram Stadium
+M.A.Chidambaram Stadium
+M.A.Chidambaram Stadium
+M.Chinnaswamy Stadium
+M.Chinnaswamy Stadium
+Wankhede Stadium
+Eden Gardens
+M.A.Chidambaram Stadium
+M.A.Chidambaram Stadium
+
+output:-
+
+4
+
